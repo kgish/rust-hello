@@ -21,6 +21,9 @@ Clone the repository like this:
 $ git clone https://github.com/kgish/rust-hello.git
 $ cd rust-hello
 $ cargo run
+    Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+     Running `target/debug/hello`
+Hello, world!
 ```
 
 ## References
