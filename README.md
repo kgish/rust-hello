@@ -26,6 +26,48 @@ $ cargo run
 Hello, world!
 ```
 
+Following the getting started guide, update the `cargo.toml` file to include a new dependency:
+
+```
+[dependencies]
+ferris-says = "0.1"
+```
+
+and modify the `main.rs` file to look like this:
+
+```
+use ferris_says::say;
+  use std::io::{stdout, BufWriter};
+  
+  fn main() {
+      let stdout = stdout();
+      let out = b"Hello fellow Rustaceans!";
+      let width = 24;
+  
+      let mut writer = BufWriter::new(stdout.lock());
+      say(out, width, &mut writer).unwrap();
+  }
+```
+
+Now when you run the application, you should see the following:
+
+```
+$ cargo run
+   Compiling hello v0.1.0 (/home/kiffin/projects/rust/hello)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.33s
+     Running `target/debug/hello`
+----------------------------
+| Hello fellow Rustaceans! |
+----------------------------
+              \
+               \
+                  _~^~^~_
+              \) /  o o  \ (/
+                '_   -   _'
+                / '-----' \
+
+```
+
 ## References
 
 * [Rust programming language](https://www.rust-lang.org)
