@@ -2,6 +2,7 @@
 
 This is a simple hello application written in the [Rust programming language](https://www.rust-lang.org)
 
+
 ## Installation
 
 First you will need to download and install Rust:
@@ -15,6 +16,9 @@ Configure the PATH environment variable to include `~/.cargo/bin directory` in o
 export PATH="$HOME/.cargo/bin:$PATH"
 ```
 
+
+## Repository
+
 Clone the repository like this:
 
 ```
@@ -25,6 +29,9 @@ $ cargo run
      Running `target/debug/hello`
 Hello, world!
 ```
+
+
+## New dependency
 
 Following the getting started guide, update the `cargo.toml` file to include a new dependency:
 
@@ -67,6 +74,7 @@ $ cargo run
                 / '-----' \
 
 ```
+
 
 ## References
 
